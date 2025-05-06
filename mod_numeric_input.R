@@ -1,9 +1,6 @@
 # mod_numeric_input.R
 library(shinyFeedback)
 
-# Helper for default values
-`%||%` <- function(a, b) if (!is.null(a)) a else b
-
 # UI module for numeric input with parameters and exclusion options
 mod_numeric_input_ui <- function(id, label = "Enter a number", min = -Inf, help_text = NULL) {
   ns <- NS(id)
