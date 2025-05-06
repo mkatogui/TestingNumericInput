@@ -1,6 +1,7 @@
 # mod_numeric_input.R
 library(shinyFeedback)
 
+
 # UI module for numeric input with parameters and exclusion options
 mod_numeric_input_ui <- function(id, label = "Enter a number", min = -Inf, help_text = NULL) {
   ns <- NS(id)
